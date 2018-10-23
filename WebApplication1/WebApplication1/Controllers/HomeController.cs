@@ -12,7 +12,7 @@ namespace WebApplication1.Controllers
     {
         public IActionResult Index()
         {
-            //123
+            //123d
             return View();
         }
 
