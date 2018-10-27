@@ -33,16 +33,69 @@ body {
     min-height:70px;
 }
 .navbar-nav {
-    padding-top: 15px;
+    padding-top: 25px;
     height: 100%;
 }
 .navbar-inverse {
     background-color: #4D2058;
     margin-bottom: unset;
+    border-color: #ba355e;
 }
 
+.navbar-inverse .navbar-nav > li > a{
+        color:#fff;
+}
+.logo {
+    width: 200px;
+    height: 45px;
+}
 
-
+.bg-ch {
+    background-color: #4D2058;
+}
+.padd-15{
+    padding:15px
+}
+.padd-20 {
+    padding: 20px
+}
+.btn-started {
+    margin-top: 10px;
+    float: right;
+    background: none;
+    color: #ba355e;
+    border: 2px solid #ba355e;
+    border-radius: 0;
+}
+.btn:hover, .btn:focus, .btn.focus {
+    color: #e6e6e6;
+    text-decoration: none;
+}
+.bg-gray {
+    background: #e6e6e6;
+}
+.white {
+    color: white
+}
+.footer-icon {
+    width: 30px;
+    height: 35px;
+}
+.mt-5{
+    margin-top:5px;
+}
+.color-ch {
+    color: #4d2058;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.social-icon {
+    width: 20px;
+    height: 30px;
+    margin: 0 3px;
+}
 @media screen and (max-width: 767px) {
     .carousel-caption {
         display: none;

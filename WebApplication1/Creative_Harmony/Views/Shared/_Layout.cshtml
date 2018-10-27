@@ -26,7 +26,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Creative_Harmony</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">
+                    <img src="~/images/Asset 3mdpi.png" class="logo" />
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -34,7 +36,7 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="About">Our Service</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">Our Works</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">Our Clients</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">Our Team</a></li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">Our Team</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact us</a></li>
                 </ul>
             </div>
@@ -45,11 +47,53 @@
 
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - Creative_Harmony</p>
-        </footer>
+        <br />
     </div>
+
+    <div class="bg-ch padd-20">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-8">
+                    <h3 class="white"> Do you have a project you would like to discuss? </h3>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-started">Lets Get Started </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray padd-20">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3">
+                        <img src="~/images/footer/dpi/Asset 116ldpi.png" />
+                        <span class="color-ch"> Riyadh Al - Falah neighborhood Othman bin Affan Street</span>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <img src="~/images/footer/dpi/Asset 114ldpi.png" style="margin-left: 40px;" />
+                    <span class="color-ch">+966 58882 5547</span>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <img src="~/images/footer/dpi/Asset 115ldpi.png" />
+                    <span class="color-ch"> info@ch-harmony.com</span>
+                </div>
+                <div class="col-md-3 mt-5 text-right">
+                    <img src="~/images/footer/dpi/Asset 120ldpi.png" class="social-icon" />
+                    <img src="~/images/footer/dpi/Asset 119ldpi.png" class="social-icon" />
+                    <img src="~/images/footer/dpi/Asset 118ldpi.png" class="social-icon" />
+                    <img src="~/images/footer/dpi/Asset 121ldpi.png" class="social-icon" />
+                    <img src="~/images/footer/dpi/Asset 117ldpi.png" class="social-icon" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-ch">
+        <div class="container">
+            <div class="row">
+                <p class="white text-center">&copy; 2018 - Creative_Harmony</p>
+            </div>
+        </div>
+    </footer>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
