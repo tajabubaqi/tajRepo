@@ -32,8 +32,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">Our Service</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" class="active">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="OurService">Our Service</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">Our Works</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">Our Clients</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">Our Team</a></li>
@@ -42,9 +42,9 @@
             </div>
         </div>
     </nav>
-
+    <div class="clearfix" style="margin-bottom: 6em;"></div>
+    <div class="clearfix"></div>
     <partial name="_CookieConsentPartial" />
-
     <div class="container body-content">
         @RenderBody()
         <br />
@@ -66,8 +66,8 @@
         <div class="container">
             <div class="row ">
                 <div class="col-md-3">
-                        <img src="~/images/footer/dpi/Asset 116ldpi.png" />
-                        <span class="color-ch"> Riyadh Al - Falah neighborhood Othman bin Affan Street</span>
+                    <img src="~/images/footer/dpi/Asset 116ldpi.png" />
+                    <span class="color-ch"> Riyadh Al - Falah neighborhood Othman bin Affan Street</span>
                 </div>
                 <div class="col-md-3 mt-5">
                     <img src="~/images/footer/dpi/Asset 114ldpi.png" style="margin-left: 40px;" />
@@ -78,7 +78,7 @@
                     <span class="color-ch"> info@ch-harmony.com</span>
                 </div>
                 <div class="col-md-3 mt-5 text-right">
-                    <img src="~/images/footer/dpi/Asset 120ldpi.png" class="social-icon" />
+                    <img src="~/images/footer/dpi/Asset 120ldpi.png" class="social-icon" style="width:15px;" />
                     <img src="~/images/footer/dpi/Asset 119ldpi.png" class="social-icon" />
                     <img src="~/images/footer/dpi/Asset 118ldpi.png" class="social-icon" />
                     <img src="~/images/footer/dpi/Asset 121ldpi.png" class="social-icon" />
@@ -90,7 +90,7 @@
     <footer class="bg-ch">
         <div class="container">
             <div class="row">
-                <p class="white text-center">&copy; 2018 - Creative_Harmony</p>
+                <p class="white text-center copyright">2018 Creative Harmony. All rights resrved</p>
             </div>
         </div>
     </footer>

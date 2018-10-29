@@ -1,10 +1,5 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
 
 .body-content {
     padding-left: 15px;
@@ -40,11 +35,16 @@ body {
     background-color: #4D2058;
     margin-bottom: unset;
     border-color: #ba355e;
+    border-width: 0 0 2px;
 }
 
 .navbar-inverse .navbar-nav > li > a{
         color:#fff;
+        font-weight:bold;
 }
+    .navbar-inverse .navbar-nav > li > a.active {
+        color: #ba355e;
+    }
 .logo {
     width: 200px;
     height: 45px;
@@ -92,9 +92,25 @@ body {
     margin-top: 3px;
 }
 .social-icon {
-    width: 20px;
-    height: 30px;
+    width: 25px;
     margin: 0 3px;
+}
+.copyright {
+    padding: 15px;
+    font-weight:600;
+}
+.clearfix{
+    margin:3em;
+}
+.Servicedetails {
+    padding-left: 20px;
+    padding-top: 50px;
+    color: #4d2058;
+    font-size: 18px;
+}
+
+.service1{
+    padding-left:70px;
 }
 @media screen and (max-width: 767px) {
     .carousel-caption {
