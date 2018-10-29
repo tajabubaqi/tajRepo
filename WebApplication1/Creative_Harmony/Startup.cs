@@ -14,9 +14,16 @@ namespace Creative_Harmony
 {
     public class Startup
     {
+        public static string ConnectionString { get; private set; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+        }
+
+        public Startup(IHostingEnvironment env)
+        {
+            Configuration = new ConfigurationBuilder().SetBasePath(env.ContentRootPath).AddJsonFile("appsettings.json").Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -38,6 +45,7 @@ namespace Creative_Harmony
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            ConnectionString = Configuration["ConnectionStrings:DefaultConnection"];
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
