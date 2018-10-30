@@ -23,28 +23,22 @@ namespace Creative_Harmony.Controllers
         {
             try
             {
+                long size = files.Sum(f => f.Length);
 
-          
-            long size = files.Sum(f => f.Length);
+                var filePath = $"{_env.WebRootPath}/images";
 
-            // full path to file in temp location
-            var filePath = $"{_env.WebRootPath}";
-
-            foreach (var formFile in files)
-            {
-                if (formFile.Length > 0)
+                foreach (var formFile in files)
                 {
-                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    if (formFile.Length > 0)
                     {
-                        await formFile.CopyToAsync(stream);
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await formFile.CopyToAsync(stream);
+                        }
                     }
                 }
-            }
 
-            // process uploaded files
-            // Don't rely on or trust the FileName property without validation.
-
-            return Ok(new { count = files.Count, size, filePath });
+                return Ok(new { count = files.Count, size, filePath });
             }
 
             catch (Exception)
