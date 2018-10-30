@@ -24,11 +24,17 @@ namespace Creative_Harmony.Controllers
 
         public IActionResult OurService()
         {
-            ViewData["Message"] = "Your application description page.";
+            //ViewData["Message"] = "Your application description page.";
 
             return View();
         }
+        public IActionResult OurWorks()
+        {
+            //ViewData["Message"] = "Your application description page.";
 
+            return View();
+        }
+        
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
