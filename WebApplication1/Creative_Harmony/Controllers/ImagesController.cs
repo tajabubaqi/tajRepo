@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Creative_Harmony.Models;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -20,34 +21,79 @@ namespace Creative_Harmony.Controllers
         }
 
         [HttpPost("employees")]
-        public async Task<IActionResult> PostEmployees(IFormFile file)
+        public async Task<IActionResult> PostEmployees(IFormFile file, IFormCollection param)
         {
-
+            //  Getting Employees Attribute
             var filePath = $"{_env.WebRootPath}/images/employees/{file.FileName}";
+            var empName = param.ContainsKey("empName") ? param["empName"].ToString() : "No Name Specified";
 
-            if (file.Length > 0)
+            try
             {
-                using (var stream = new FileStream(filePath, FileMode.Create))
+                //  Copying Image to Server Root Directory 
+                if (file.Length > 0)
                 {
-                    await file.CopyToAsync(stream);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await file.CopyToAsync(stream);
+                    }
                 }
+
+                //Adding Records to Database
+                using (var context = new HarmonyContext())
+                {
+                    var employee = new Employees()
+                    {
+                        Name = empName,
+                        ImagePath = filePath
+                    };
+
+                    context.employees.Add(employee);
+                    context.SaveChanges();
+                }
+            }
+            catch (Exception)
+            {
+                return BadRequest("Upload Image Failed");
             }
 
             return Ok(filePath);
         }
 
         [HttpPost("partners")]
-        public async Task<IActionResult> PostParters(IFormFile file)
+        public async Task<IActionResult> PostParters(IFormFile file, IFormCollection param)
         {
 
+            //  Getting Employees Attribute
             var filePath = $"{_env.WebRootPath}/images/partners/{file.FileName}";
+            var partName = param.ContainsKey("partName") ? param["partName"].ToString() : "No Name Specified";
 
-            if (file.Length > 0)
+            try
             {
-                using (var stream = new FileStream(filePath, FileMode.Create))
+                //  Copying Image to Server Root Directory 
+                if (file.Length > 0)
                 {
-                    await file.CopyToAsync(stream);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await file.CopyToAsync(stream);
+                    }
                 }
+
+                //Adding Records to Database
+                using (var context = new HarmonyContext())
+                {
+                    var employee = new Employees()
+                    {
+                        Name = partName,
+                        ImagePath = filePath
+                    };
+
+                    context.employees.Add(employee);
+                    context.SaveChanges();
+                }
+            }
+            catch (Exception)
+            {
+                return BadRequest("Upload Image Failed");
             }
 
             return Ok(filePath);
