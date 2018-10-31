@@ -97,7 +97,8 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 .copyright {
     padding: 15px;
-    font-weight:600;
+    font-weight: 600;
+    margin: 0;
 }
 .clearfix{
     margin:3em;
@@ -108,10 +109,17 @@ for details on configuring this project to bundle and minify static web assets. 
     color: #4d2058;
     font-size: 18px;
 }
-
-.service1{
-    padding-left:70px;
+.imgborder {
+    padding: 5px;
+    width: 280px;
+    border: solid 1px;
 }
+    .imgborder img {
+        width: 100%;
+    }
+    .service1 {
+        padding-left: 70px;
+    }
 @media screen and (max-width: 767px) {
     .carousel-caption {
         display: none;
