@@ -42,6 +42,8 @@ namespace Creative_Harmony.Migrations
 
                     b.Property<string>("ImagePath");
 
+                    b.Property<string>("Name");
+
                     b.Property<int?>("OurWorksID");
 
                     b.HasKey("ID");
@@ -58,6 +60,8 @@ namespace Creative_Harmony.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ImagePath");
+
+                    b.Property<string>("Name");
 
                     b.HasKey("ID");
 

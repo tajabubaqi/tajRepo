@@ -10,8 +10,6 @@ using System.Threading.Tasks;
 
 namespace Creative_Harmony.Controllers
 {
-    [Route("/images")]
-    [ApiController]
     public class ImagesController : Controller
     {
         private IHostingEnvironment _env;
@@ -20,7 +18,6 @@ namespace Creative_Harmony.Controllers
             _env = env;
         }
 
-        [HttpPost("employees")]
         public async Task<IActionResult> PostEmployees(IFormFile file, IFormCollection param)
         {
             //  Getting Employees Attribute
@@ -59,7 +56,6 @@ namespace Creative_Harmony.Controllers
             return Ok(filePath);
         }
 
-        [HttpPost("partners")]
         public async Task<IActionResult> PostParters(IFormFile file, IFormCollection param)
         {
 

@@ -27,6 +27,7 @@ namespace Creative_Harmony.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Name = table.Column<string>(nullable: true),
                     ImagePath = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -68,6 +69,7 @@ namespace Creative_Harmony.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Name = table.Column<string>(nullable: true),
                     ImagePath = table.Column<string>(nullable: true),
                     OurWorksID = table.Column<int>(nullable: true)
                 },

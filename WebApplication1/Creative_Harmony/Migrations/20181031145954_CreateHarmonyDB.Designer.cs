@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Creative_Harmony.Migrations
 {
     [DbContext(typeof(HarmonyContext))]
-    [Migration("20181031081127_CreateHarmonyDB")]
+    [Migration("20181031145954_CreateHarmonyDB")]
     partial class CreateHarmonyDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,6 +44,8 @@ namespace Creative_Harmony.Migrations
 
                     b.Property<string>("ImagePath");
 
+                    b.Property<string>("Name");
+
                     b.Property<int?>("OurWorksID");
 
                     b.HasKey("ID");
@@ -60,6 +62,8 @@ namespace Creative_Harmony.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ImagePath");
+
+                    b.Property<string>("Name");
 
                     b.HasKey("ID");
 
