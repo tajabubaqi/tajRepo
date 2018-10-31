@@ -34,6 +34,7 @@ namespace Creative_Harmony.Controllers
 
             return View();
         }
+
         
         public IActionResult Contact()
         {
