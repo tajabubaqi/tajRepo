@@ -10,7 +10,6 @@ namespace Creative_Harmony.Controllers
 {
     public class AdminController : Controller
     {
-        [HttpPost]
         public IActionResult Login()
         {
             return View();
