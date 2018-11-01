@@ -18,6 +18,7 @@ namespace Creative_Harmony.Controllers
             _env = env;
         }
 
+        [HttpPost]
         public async Task<IActionResult> PostEmployees(IFormFile file, IFormCollection param)
         {
             //  Getting Employees Attribute
@@ -55,7 +56,7 @@ namespace Creative_Harmony.Controllers
 
             return Ok(filePath);
         }
-
+        [HttpPost]
         public async Task<IActionResult> PostParters(IFormFile file, IFormCollection param)
         {
 
