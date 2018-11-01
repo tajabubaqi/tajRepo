@@ -157,7 +157,28 @@ for details on configuring this project to bundle and minify static web assets. 
     border-radius: 50%;
     border: none;
 }
-
+.carousel-indicators .active {
+    border: 1px solid #ba355e;
+    background-color: #4d2058;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgb(77, 32, 88);
+    border-radius: 10px;
+}
+.imgcarousel{
+    width:120px;
+}
+.clt {
+    float: left;
+    padding: 20px;
+    width: 280px;
+}
 @media screen and (max-width: 767px) {
     .carousel-caption {
         display: none;
