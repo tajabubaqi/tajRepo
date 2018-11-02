@@ -179,6 +179,25 @@ for details on configuring this project to bundle and minify static web assets. 
     padding: 20px;
     width: 280px;
 }
+.imgTeam {
+    width: 220px;
+    height: 340px;
+}
+
+.emp {
+    color: #4d2058;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin: 5px;
+}
+.pos {
+    color: #ba355e;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin: 5px;
+}
 @media screen and (max-width: 767px) {
     .carousel-caption {
         display: none;
