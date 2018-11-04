@@ -9,6 +9,7 @@ namespace Creative_Harmony.Models
     {
         public int ID { get; set; }
         public string Name { get; set; }
+        public string Position { get; set; }
         public string ImagePath { get; set; }
     }
 }

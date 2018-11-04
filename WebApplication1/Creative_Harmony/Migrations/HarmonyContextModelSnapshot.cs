@@ -29,6 +29,8 @@ namespace Creative_Harmony.Migrations
 
                     b.Property<string>("Name");
 
+                    b.Property<string>("Position");
+
                     b.HasKey("ID");
 
                     b.ToTable("employees");
