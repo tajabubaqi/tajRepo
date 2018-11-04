@@ -1,0 +1,21 @@
+<!--?xml version="1.0" standalone="no"?-->
+
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="601.000000pt" height="575.000000pt" viewBox="0 0 601.000000 575.000000" preserveAspectRatio="xMidYMid meet" style="">
+<metadata>
+Created by potrace 1.15, written by Peter Selinger 2001-2017
+</metadata>
+<g transform="translate(0.000000,575.000000) scale(0.100000,-0.100000)" stroke="red" stroke-width="40" fill="pink">
+<path d="M1268 5740 c-54 -10 -114 -54 -140 -103 -43 -83 -45 -75 260 -1045
+197 -622 282 -906 282 -937 0 -63 -31 -117 -93 -164 -28 -21 -374 -267 -767
+-546 -393 -279 -732 -524 -752 -545 -61 -63 -72 -153 -29 -238 22 -43 43 -63
+91 -87 32 -16 107 -18 975 -27 517 -4 959 -11 982 -14 55 -7 119 -54 143 -107
+11 -23 144 -437 295 -920 152 -483 282 -891 290 -906 21 -42 80 -89 120 -97
+20 -3 61 -4 91 -2 60 5 115 41 146 94 9 16 150 427 313 913 163 487 303 897
+311 912 17 34 67 72 113 88 26 8 270 9 984 0 1066 -12 1002 -15 1071 61 60 66
+70 154 27 239 -16 30 -166 146 -785 605 -421 312 -777 581 -790 596 -13 16
+-29 51 -36 79 l-12 50 306 912 c228 680 306 923 306 958 0 104 -80 190 -184
+199 -30 2 -68 0 -85 -6 -16 -6 -373 -255 -793 -554 -420 -298 -779 -551 -798
+-560 -44 -23 -116 -23 -160 0 -19 10 -367 264 -772 565 -405 301 -752 555
+-770 566 -40 22 -90 30 -140 21z" class="AveaISUD_0"></path>
+</g>
+<style data-made-with="vivus-instant">.AveaISUD_0{stroke-dasharray:22234 22236;stroke-dashoffset:22235;animation:AveaISUD_draw_0 4000ms ease-in-out 0ms infinite,AveaISUD_fade 4000ms linear 0ms infinite;}@keyframes AveaISUD_draw{100%{stroke-dashoffset:0;}}@keyframes AveaISUD_fade{0%{stroke-opacity:1;}95%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes AveaISUD_draw_0{20%{stroke-dashoffset: 22235}70%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>
