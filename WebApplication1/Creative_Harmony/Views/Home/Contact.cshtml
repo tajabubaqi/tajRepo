@@ -11,26 +11,29 @@
 </div>
 
 @section Scripts
-{
+    {
+      
     <script>
+        document.getElementById("Contactus").className = "active";
+
         function myMap() {
             var mapProp = {
                 center: new google.maps.LatLng(24.7016038, 46.6754026),
                 zoom: 5,
             };
             var map = new google.maps.Map(document.getElementById("Map"), mapProp);
-        
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(24.7253981, 46.2620413),
-            animation: google.maps.Animation.BOUNCE
-        });
 
-        marker.setMap(map);
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(24.7253981, 46.2620413),
+                animation: google.maps.Animation.BOUNCE
+            });
 
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(24.7253981, 46.2620413),
-            icon: 'pinkball.png'
-        });
+            marker.setMap(map);
+
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(24.7253981, 46.2620413),
+                icon: 'pinkball.png'
+            });
 
             marker.setMap(map);
         }

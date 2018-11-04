@@ -6,17 +6,20 @@
 
     <div class="row">
         <object type="svg+xml">
-            <img src="~/svg/Asset 12mdpi_animated.svg" style="width: 30%;float: right;">
+            <img src="~/svg/Asset 12mdpi_animated.svg" class="animated rotateIn" style="width: 30%;float: right;" />
         </object>
 
         <div class="col-md-4">
-            <img src="/images/Asset 12mdpi.png" style="width: 75%;float: right;display: block;visibility: hidden;">
-            <img src="~/images/Asset 11mdpi.png" style="width: 50%;" />
+            <img src="/images/Asset 12mdpi.png" class="animated rotateIn" style="width: 75%;float: right;display: block;visibility: hidden;">
+            <img src="~/images/Asset 11mdpi.png" style="width: 50%;" class="animated bounceInDown" />
         </div>
 
         @*<div class="col-md-8">
-            <img src="~/images/Asset 12mdpi.png" style="width: 50%; float:right;" />
-        </div>*@
+                <img src="~/images/Asset 12mdpi.png" style="width: 50%; float:right;" />
+            </div>*@
 
     </div>
 </div>
+<script>
+    document.getElementById("Home").className = "active";
+</script>

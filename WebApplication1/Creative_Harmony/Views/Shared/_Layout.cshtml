@@ -15,6 +15,7 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+    <link href="~/login/vendor/animate/animate.css" rel="stylesheet" />
     @RenderSection("Styles", required: false)
 </head>
 <body>
@@ -33,12 +34,12 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index" class="active">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="OurService">Our Service</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="OurWorks">Our Works</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="OurClients">Our Clients</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="OurTeam">Our Team</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact us</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" id="Home">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="OurService" id="OurService">Our Service</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="OurWorks" id="OurWorks">Our Works</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="OurClients" id="Clients">Our Clients</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="OurTeam" id="OurTeam">Our Team</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact" id="Contactus">Contact us</a></li>
                 </ul>
             </div>
         </div>

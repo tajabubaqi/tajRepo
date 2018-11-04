@@ -5,47 +5,47 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 ">
-            <div class=" imgborder">
-                <img src="~/images/OurWorks/Asset 78mdpi.png" />
+            <div class=" imgborder animated zoomInLeft">
+                <img src="~/images/OurWorks/Asset 78mdpi.png"  />
             </div>
-            <div class="internal imgborder">
-                <div class="divcenter">
+            <div class="internal imgborder animated zoomIn">
+                <div class="divcenter ">
                     <h2 class="white">Stilly Group</h2>
-                    <button class="btn btnFull" type="button" data-toggle="collapse" data-target="#Stilly" aria-expanded="false" aria-controls="Stilly">See Full Project</button>
+                    <button class="btn btnFull" type="button" id="btnFullPro" data-toggle="collapse" data-target="#Stilly" aria-expanded="false" aria-controls="Stilly">See Full Project</button>
                 </div>
             </div>
-            <div class="imgborder">
+            <div class="imgborder animated zoomInRight">
                 <img src="~/images/OurWorks/Asset 76mdpi.png" />
             </div>
-            <div class="imgborder">
-                <img src="~/images/OurWorks/Asset 77mdpi.png" />
+            <div class="imgborder animated zoomIn">
+                <img src="~/images/OurWorks/Asset 77mdpi.png"  />
             </div>
-            <div class=" imgborder">
-                <img src="~/images/OurWorks/Asset 79mdpi.png" />
+            <div class=" imgborder animated zoomInLeft">
+                <img src="~/images/OurWorks/Asset 79mdpi.png"  />
             </div>
-            <div class="imgborder">
+            <div class="imgborder animated zoomIn">
                 <img src="~/images/OurWorks/Asset 80mdpi.png" />
             </div>
-            <div class="imgborder">
-                <img src="~/images/OurWorks/Asset 78mdpi.png" />
+            <div class="imgborder animated zoomInRight"> 
+                <img src="~/images/OurWorks/Asset 78mdpi.png"  />
             </div>
-            <div class="imgborder">
+            <div class="imgborder animated zoomInLeft">
                 <img src="~/images/OurWorks/Asset 74mdpi.png" />
             </div>
         </div>
     </div>
     <div class="clearfix"></div>
-    <div class="row">
+    <div class="row" id="Divpro">
         <div class="col-md-12 text-center">
             <div class="collapse" id="Stilly">
                 <div class="col-md-12">
-                    <img src="~/images/OurWorks/Internal/Asset 85ldpi.png" />
+                    <img src="~/images/OurWorks/Internal/Asset 85ldpi.png" class="animated zoomIn" />
                 </div>
                 <div class="col-md-12">
-                    <img src="~/images/OurWorks/Internal/Asset 84ldpi.png" />
+                    <img src="~/images/OurWorks/Internal/Asset 84ldpi.png" class="animated zoomIn" />
                 </div>
                 <div class="col-md-12">
-                    <img src="~/images/OurWorks/Internal/Asset 83ldpi.png" />
+                    <img src="~/images/OurWorks/Internal/Asset 83ldpi.png" class="animated zoomIn" />
                 </div>
             </div>
         </div>
@@ -53,6 +53,10 @@
 </div>
 <div class="row">
         <div class="col-md-12">
-            <button id="backtotop" type="button" data-toggle="collapse" data-target="#Stilly" aria-expanded="false" aria-controls="Stilly"><i class="glyphicon glyphicon-triangle-top white"></i></button>
+            <button id="backtotop"  type="button" data-toggle="collapse" data-target="#Stilly" aria-expanded="false" aria-controls="Stilly"><i class="glyphicon glyphicon-triangle-top white animated zoomIn" ></i></button>
         </div>
     </div>
+
+<script>
+    document.getElementById("OurWorks").className = "active";
+</script>

@@ -50,6 +50,9 @@ for details on configuring this project to bundle and minify static web assets. 
     height: 45px;
 }
 
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #ba355e;
+}
 .bg-ch {
     background-color: #4D2058;
 }
@@ -136,6 +139,7 @@ for details on configuring this project to bundle and minify static web assets. 
     color: #ba355e;
     border: 2px solid #ba355e;
     border-radius: 0;
+    font-weight:bold;
 }
 .divcenter {
     position: relative;
