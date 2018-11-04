@@ -125,7 +125,7 @@ for details on configuring this project to bundle and minify static web assets. 
         width: 100%;
     }
     .service1 {
-        padding-left: 70px;
+        padding-left: 20px;
     }
 .internal {
     background-image: url('/images/OurWorks/Asset 73mdpi.png');
@@ -202,8 +202,56 @@ for details on configuring this project to bundle and minify static web assets. 
     display: block;
     margin: 5px;
 }
+.callicon{
+    margin-left:40px;
+}
+.txtright {
+    text-align: right;
+}
 @media screen and (max-width: 767px) {
     .carousel-caption {
         display: none;
+    }
+    .navbar-nav{
+        padding-top:0px;
+        float: none;
+        text-align: center;
+    }
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: #ba355e;
+        margin-top: 5px;
+    }
+    .logo {
+        width: 150px;
+    }
+    .navbar-toggle {
+        margin-top: 20px;
+        background: #ba355e;
+    }
+    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+        background-color: #ba355e;
+    }
+    h3, .h3 {
+        font-size: 20px;
+    }
+    .divStarted{
+        text-align:center;
+    }
+    .btn-started{
+        float:none;
+    }
+    .callicon {
+        margin-left: 0px;
+    }
+    .txtright {
+        text-align:unset;
+    }
+    .Servicedetails {
+        padding-left: 0px;
+        padding-top: 15px;
+        text-align: justify;
+    }
+    .ServiceTit {
+        margin-right: 30px;
     }
 }
