@@ -68,7 +68,7 @@ for details on configuring this project to bundle and minify static web assets. 
     border-radius: 0;
 }
 .btn:hover, .btn:focus, .btn.focus {
-    color: #e6e6e6;
+    color: #a01f47;
     text-decoration: none;
 }
 .bg-gray {
@@ -111,8 +111,12 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 .imgborder {
     padding: 5px;
-    width: 280px;
+    width: 275px;
     border: solid 1px;
+    margin: 5px;
+    border-color: #4d2058;
+    float:left;
+    text-align:center;
 }
     .imgborder img {
         width: 100%;
@@ -120,6 +124,80 @@ for details on configuring this project to bundle and minify static web assets. 
     .service1 {
         padding-left: 70px;
     }
+.internal {
+    background-image: url('/images/OurWorks/Asset 73mdpi.png');
+    background-size: 560px;
+    width: 560px;
+    height: 275px;
+}
+.btnFull {
+    margin-top: 10px;
+    background: none;
+    color: #ba355e;
+    border: 2px solid #ba355e;
+    border-radius: 0;
+}
+.divcenter {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#backtotop {
+    background-color: #4d2058;
+    z-index: 999;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    float: right;
+    border-radius: 50%;
+    border: none;
+}
+.carousel-indicators .active {
+    border: 1px solid #ba355e;
+    background-color: #4d2058;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgb(77, 32, 88);
+    border-radius: 10px;
+}
+.imgcarousel{
+    width:120px;
+}
+.clt {
+    float: left;
+    padding: 20px;
+    width: 280px;
+}
+.imgTeam {
+    width: 220px;
+    height: 340px;
+}
+
+.emp {
+    color: #4d2058;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin: 5px;
+}
+.pos {
+    color: #ba355e;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin: 5px;
+}
 @media screen and (max-width: 767px) {
     .carousel-caption {
         display: none;

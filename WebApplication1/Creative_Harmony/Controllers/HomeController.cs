@@ -34,8 +34,16 @@ namespace Creative_Harmony.Controllers
 
             return View();
         }
+        public IActionResult OurTeam()
+        {
+            //ViewData["Message"] = "Your application description page.";
 
+            return View();
+        }
         
+
+
+
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
@@ -43,6 +51,13 @@ namespace Creative_Harmony.Controllers
             return View();
         }
 
+        public IActionResult OurClients()
+        {
+            //ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+        
         public IActionResult Privacy()
         {
             return View();
