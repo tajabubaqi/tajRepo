@@ -1,4 +1,5 @@
 ﻿using Creative_Harmony.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -16,7 +17,7 @@ namespace Creative_Harmony.Controllers
             _env = env;
         }
 
-        [HttpPost]
+        [HttpPost, Authorize]
         public async Task<IActionResult> PostEmployees(IFormFile file, IFormCollection param)
         {
             //  Getting Employees Attribute
@@ -54,7 +55,7 @@ namespace Creative_Harmony.Controllers
 
             return Ok(filePath);
         }
-        [HttpPost]
+        [HttpPost, Authorize]
         public async Task<IActionResult> PostParters(IFormFile file, IFormCollection param)
         {
 
