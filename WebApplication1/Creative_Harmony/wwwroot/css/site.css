@@ -232,6 +232,10 @@ for details on configuring this project to bundle and minify static web assets. 
 .txtright {
     text-align: right;
 }
+.imgstar {
+    margin-left: 15%;
+    width: 46%;
+}
 @media screen and (max-width: 767px) {
     .carousel-caption {
         display: none;
@@ -286,5 +290,8 @@ for details on configuring this project to bundle and minify static web assets. 
     }
     #Stilly img {
         width: 100%;
+    }
+    .imgstar{
+        width:90%;
     }
 }
