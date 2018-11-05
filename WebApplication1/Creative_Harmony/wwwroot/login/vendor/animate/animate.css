@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 /*!
  * animate.css -http://daneden.me/animate
@@ -9,8 +9,9 @@
  */
 
 .animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay:5s;
 }
 
 .animated.infinite {
