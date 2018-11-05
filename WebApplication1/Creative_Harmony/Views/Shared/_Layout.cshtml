@@ -13,14 +13,9 @@
 <body>
 
     <div class="preloader">
-        <div class="status-mes">
-            <div class="bigSqr">
-                <div class="square first"></div>
-                <div class="square second"></div>
-                <div class="square third"></div>
-                <div class="square fourth"></div>
-            </div>
-            <div class="text_loading text-center"><%=getResource("Loading") %></div>
+        <div class="center">
+            <img src="~/images/Asset 12mdpi_animated.svg" />
+            <img src="~/images/Asset 3mdpi.png" />
         </div>
     </div>
 
@@ -51,7 +46,6 @@
     </nav>
     <div class="clearfix" style="margin-bottom: 6em;"></div>
     <div class="clearfix"></div>
-    <partial name="_CookieConsentPartial" />
     <div class="body-content">
         @RenderBody()
         <br />
