@@ -11,7 +11,7 @@ namespace Creative_Harmony.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=.;Database=harmony;User Id=sa;Password=sasa;");
+            optionsBuilder.UseSqlServer(Startup.ConnectionString);
         }
     }
 }
